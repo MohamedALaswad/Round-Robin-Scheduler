@@ -1,1 +1,41 @@
-# Round-Robin-Scheduler
+Project: Priority Scheduling with Round Robin (OS 325 Project)
+Developers:
+Mohammed Abdulla  Alaswad   
+Hussain Jameel Moosa Omran  
+_____________________________________________________________________________________
+
+1. OVERVIEW:
+This project implements the Priority Scheduling algorithm combined 
+with Round Robin. It calculates Waiting Time (WT), Turnaround Time (TAT), 
+and Response Time (RT) for a given set of processes.
+
+2. PROJECT STRUCTURE:
+The project is divided into three main Java files for better organization:
+- Process.java: Contains the core data model for a single process.
+- PriorityRR.java: The standard terminal-based (Console) version.
+- PriorityRR_GUI.java: An enhanced version with a Graphical User Interface.
+
+3. HOW TO RUN:
+You have two options to run this program:
+
+   A) CONSOLE VERSION (Standard):
+      - Run the file 'PriorityRR.java'.
+      - Enter inputs (Quantum, ID, AT, BT, Priority) via the console.
+      - Output: Gantt Chart and calculations will be displayed in the terminal.
+
+   B) GUI VERSION (Enhanced):
+      - Run the file 'PriorityRR_GUI.java'.
+      - A window will appear with formatted tables.
+      - Enter data directly into the input table and click "Run Simulation".
+      - This version features a centered professional layout and interactive tables.
+
+4. LOGIC DETAILS:
+- Sorting: Processes are initially sorted by Arrival Time.
+- Priority: The algorithm always selects the process with the highest priority (lowest numerical value).
+- Preemption: If a higher priority process arrives, it preempts the current one.
+- Round Robin: If multiple processes have the same high priority, they share the CPU based on the Quantum time (q).
+
+5. FEATURES:
+- Formatted Gantt Chart: Displayed in (Time | ID | Time) format.
+- Accurate Calculations: Averages are formatted to 2 decimal places (%.2f).
+- Input Validation: Error handling for invalid characters or negative values.
