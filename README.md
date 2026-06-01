@@ -21,6 +21,7 @@ You have two options to run this program:
    A) CONSOLE VERSION (Standard):
       - Run the file 'PriorityRR.java'.
       - Enter inputs (Quantum, ID, AT, BT, Priority) via the console.
+      - Enter inputs (0 0 0 0) via the console to stop data entry.
       - Output: Gantt Chart and calculations will be displayed in the terminal.
 
    B) GUI VERSION (Enhanced):
